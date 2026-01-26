@@ -125,8 +125,8 @@ export default function Navbar() {
                     <Link href="/categories">
                       <Button variant="secondary" className="text-[#FF5F1F] border-[#FF5F1F] hover:bg-[#FF5F1F] hover:text-white transition">Ranked Categories</Button>
                     </Link>
-                    <Link href="/products">
-                      <Button variant="primary" className="bg-[#FF5F1F] text-white hover:bg-[#e34f14] transition">All Products</Button>
+                    <Link href="/login">
+                      <Button variant="primary" className="bg-[#FF5F1F] text-white hover:bg-[#e34f14] transition">Dashboard</Button>
                     </Link>
                   </div>
                 </motion.div>
