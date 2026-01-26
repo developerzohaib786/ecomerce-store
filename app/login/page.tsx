@@ -1,5 +1,5 @@
 import { LoginForm } from "@/components/login-form"
-import { DemoCredentials } from "@/components/DemoCredentials"
+import { DemoCredentials } from "@/app/components/DemoCredentials"
 
 export default function LoginPage() {
   return (
