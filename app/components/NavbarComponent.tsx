@@ -104,9 +104,9 @@ export default function Navbar() {
                     Ranked Categories
                   </Button>
                 </Link>
-                <Link href="/products">
+                <Link href="/login">
                   <Button variant="primary" className="hidden cursor-pointer md:inline-flex items-center bg-[#FF5F1F] text-white hover:bg-[#e34f14] transition">
-                    All Products
+                    Dashboard
                   </Button>
                 </Link>
               </div>
