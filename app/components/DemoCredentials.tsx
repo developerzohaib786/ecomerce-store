@@ -1,29 +1,40 @@
 'use client'
 
 export function DemoCredentials() {
-  const credentials = `username=developerzohaib@email.com
-password=developerzohaib`
-
-  const copyToClipboard = async () => {
-    await navigator.clipboard.writeText(credentials)
-    alert('Credentials copied!')
+  const copyText = async (text: string) => {
+    await navigator.clipboard.writeText(text)
+    alert('Copied!')
   }
 
   return (
-    <div className="border rounded-lg p-4 bg-gray-50 text-sm">
-      <p className="font-semibold mb-2">Demo Credentials</p>
+    <div className="border rounded-lg p-4 bg-gray-50 text-sm min-w-[320px]">
+      <p className="font-semibold mb-3 text-black">Demo Credentials</p>
 
-      <div className="font-mono text-gray-700">
-        <p>username: <span className="font-semibold">developerzohaib@email.com</span></p>
-        <p>password: <span className="font-semibold">developerzohaib</span></p>
+      <div className="space-y-3 font-mono text-gray-800">
+        <div className="flex items-center justify-between gap-2">
+          <span className="truncate">
+            username: <strong>developerzohaib@email.com</strong>
+          </span>
+          <button
+            onClick={() => copyText('developerzohaib@email.com')}
+            className="shrink-0 rounded-md bg-black text-white px-3 py-1 text-xs hover:opacity-90"
+          >
+            Copy
+          </button>
+        </div>
+
+        <div className="flex items-center justify-between gap-2">
+          <span className="truncate">
+            password: <strong>developerzohaib</strong>
+          </span>
+          <button
+            onClick={() => copyText('developerzohaib')}
+            className="shrink-0 rounded-md bg-black text-white px-3 py-1 text-xs hover:opacity-90"
+          >
+            Copy
+          </button>
+        </div>
       </div>
-
-      <button
-        onClick={copyToClipboard}
-        className="mt-3 w-full rounded-md bg-black text-white py-2 text-sm hover:opacity-90"
-      >
-        Copy Credentials
-      </button>
     </div>
   )
 }
