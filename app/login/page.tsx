@@ -1,12 +1,14 @@
 import { LoginForm } from "@/components/login-form"
-import { DemoCredentials } from "@/app/components/DemoCredentials"
+import { DemoCredentials } from "@/components/DemoCredentials"
 
 export default function LoginPage() {
   return (
-    <div className="bg-white flex min-h-svh flex-col items-center justify-center p-6 md:p-10 overflow-y-hidden">
-      <div className="w-full max-w-sm md:max-w-3xl p-6 space-y-4">
-        <DemoCredentials />
-        <LoginForm />
+    <div className="bg-white min-h-svh overflow-x-auto">
+      <div className="flex justify-center px-6 py-10">
+        <div className="flex gap-6 min-w-max">
+          <DemoCredentials />
+          <LoginForm />
+        </div>
       </div>
     </div>
   )
