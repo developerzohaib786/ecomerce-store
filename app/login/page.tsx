@@ -1,5 +1,5 @@
 import { LoginForm } from "@/components/login-form"
-import { FiCopy } from "react-icons/fi" // Using react-icons for copy icon
+import { FiCopy } from "react-icons/fi" 
 import { useState } from "react"
 
 export default function LoginPage() {
@@ -9,11 +9,13 @@ export default function LoginPage() {
     password: "password123",
   }
 
-  // Copy function
   const copyToClipboard = (text: string) => {
+  if (typeof window !== "undefined" && navigator.clipboard) {
     navigator.clipboard.writeText(text)
-    alert("Copied to clipboard!") // optional feedback
+    alert("Copied to clipboard!")
   }
+}
+
 
   return (
     <div className="bg-white min-h-svh overflow-x-auto">
