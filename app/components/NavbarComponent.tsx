@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/aboutus' },
-  { label: 'FAQs', href: '/faq' },
+  { label: 'Pipeline', href: '/pipeline' },
+  { label: 'login to dashboard', href: '/login' },
   { label: 'Top Ranked List', href: '/categories-list' },
 ]
 

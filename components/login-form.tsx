@@ -43,7 +43,7 @@ export function LoginForm({
       className={cn("flex flex-col gap-6 bg-white min-h-screen p-4", className)}
       {...props}
     >
-      <Card className="overflow-hidden p-0 bg-white border-neutral-700">
+      <Card className="overflow-hidden p-0 bg-white border-neutral-700 w-full max-w-4xl mx-auto shadow-lg">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form onSubmit={handleSubmit} className="p-6 md:p-8 bg-white">
             <div className="flex flex-col gap-6">
