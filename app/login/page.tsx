@@ -1,3 +1,5 @@
+"use client";
+
 import { LoginForm } from "@/components/login-form"
 import { FiCopy } from "react-icons/fi" 
 import { useState } from "react"
